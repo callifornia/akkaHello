@@ -29,7 +29,7 @@ object Routes {
                 materializer: ActorMaterializer,
                 actorSystem: ActorSystem) = {
 
-    val route = path("hello") {
+    val route = pathSingleSlash {
       get {
         complete(HttpEntity(ContentTypes.`text/html(UTF-8)`, "<h1>Say hello to akka http</h1>"))
       }
