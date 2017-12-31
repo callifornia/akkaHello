@@ -18,6 +18,6 @@ object AkkaHelloWord {
         complete("Hi there !!! =)")
       }
     }
-    Http().bindAndHandle(routes, "0.0.0.0", 5000)
+    Http().bindAndHandle(routes, "0.0.0.0", 8080)
   }
 }
