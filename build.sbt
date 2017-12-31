@@ -1,8 +1,10 @@
-name := "akkaHello"
-
-version := "0.1"
-
+lazy val root = (project in file(".")).enablePlugins(JavaAppPackaging)
+name := "akkHelloWord"
+version := "0.2"
 scalaVersion := "2.12.4"
+
+packageName in Docker := "akka-hello-word"
+dockerExposedPorts := Seq(5000)
 
 libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-http"   % "10.1.0-RC1",
