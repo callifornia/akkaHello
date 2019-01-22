@@ -8,7 +8,7 @@ object AkkaHelloWord {
 
   def main(Args: Array[String]): Unit = {
 
-    implicit val actorSystem = ActorSystem("awesomeSystem")
+    implicit val actorSystem = ActorSystem("This shit should be delevered")
     implicit val materialize = ActorMaterializer()
     implicit val executionContext = actorSystem.dispatcher
 
